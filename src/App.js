@@ -2,8 +2,11 @@ import Intro from "./components/intro/Intro";
 import {AboutMe} from "./components/aboutMe/AboutMe";
 import ProductList from "./components/productList/ProductList";
 import {ThemeContext} from "./context";
-import {useContext} from "react";
+import React, {useContext} from "react";
 import Toggle from "./components/toggle/Toggle";
+import ContactMe from "./components/contactMe/ContactMe";
+import Footer from "./components/footer/Footer";
+import Wave from "./components/wave/Wave";
 
 
 
@@ -18,6 +21,9 @@ function App() {
             <Intro/>
             <AboutMe />
             <ProductList />
+            <ContactMe />
+            <Wave />
+            <Footer />
         </div>
     );
 }

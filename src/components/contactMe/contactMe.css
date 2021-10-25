@@ -1,0 +1,133 @@
+.c {
+    height: 100vh;
+    position: relative;
+}
+
+.c-bg {
+    width: 20px;
+    height: 100%;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    position: absolute;
+}
+
+.c-wrapper {
+    padding: 50px;
+    display: flex;
+}
+
+.c-left {
+    flex: 1;
+}
+
+.c-title {
+    font-size: 60px;
+    width: 80%;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.c-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.c-des {
+    font-weight: 200;
+}
+
+.c-form {
+    margin-top: 20px;
+}
+
+.c-inputs {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.c-textarea {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.c-btn {
+    border: none;
+    padding: 15px;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.c-img-phone{
+    position: absolute;
+    width: 250px;
+    height: 320px;
+    right: 120px;
+    top: 72px;
+}
+
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .c-title {
+        font-size: 25px;
+    }
+
+    .c-info-item {
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .c-des{
+        display: none;
+    }
+    .c-form{
+        margin-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .c-inputs{
+        width: 35%;
+        height: 40px;
+        margin: 10px;
+        margin-left: 0px;
+    }
+    .c-textarea{
+        width: 80%;
+    }
+    .c-h3-title{
+        display: none;
+    }
+    .c-btn{
+        margin-top: 10px;
+    }
+    .email{
+        width: 80%;
+    }
+    .c-img-phone{
+        display: none;
+    }
+}
